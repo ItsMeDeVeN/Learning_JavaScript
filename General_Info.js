@@ -70,6 +70,7 @@ git commit -a
 // Write the description of the changes made
 then press esc key to come out of the INSERT mode
 then type :wq to save changes and then quit the edit. 
+Finally git pus origin-master to push all the changes into the file.
 */
 
 
