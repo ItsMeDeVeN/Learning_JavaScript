@@ -52,6 +52,18 @@ or push an existing repository from the command line
 git remote add origin https://github.com/ItsMeDeVeN/Learning_JS.git
 git branch -M main
 git push -u origin main
+
+
+Following the Youtube Video:-
+Firstly, in the folder u want to upload open the gitbash there, then = 
+git init
+git status
+git add -A
+git status
+git commit -m "Learning JS commit"
+git remote add origin https://github.com/ItsMeDeVeN/Learning_JS.git
+To remove the origin :- git remote rm origin
+git push origin master
 */
 
 
