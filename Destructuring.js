@@ -11,7 +11,7 @@
 
 
 // ARRAY DESTRUCTURING
-// let arr = ["Deven","Bariya"];
+let arr = ["Deven","Bariya"];
 // let [firstname, lastname] = arr;
 // console.log(firstname,lastname);
 
@@ -85,7 +85,7 @@
 
 
 // Date And Time
-let now = Date.now();
+// let now = Date.now();
 //     for(let i = 0; i < 1000000; i++){
 //     let d_something = i*i*i;
 //     // console.log(i);

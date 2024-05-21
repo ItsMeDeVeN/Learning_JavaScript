@@ -113,4 +113,11 @@ Ans:- Time between initializing "let" as undefined & assigning some value (Hoist
 
 Q) What is Shadowing?
 Ans:- Same named variable shadows it inside a block & also modifies it.
+
+
+Q) What is spread operator?
+Ans :- Represnted as "..." i.e 3 dots, that allows you to spread the elements of an iterable 
+(such as arrays, strings, or objects), into another iterable or function call. 
+It “expands” an iterable object array into the list of arguments.
+
 */
