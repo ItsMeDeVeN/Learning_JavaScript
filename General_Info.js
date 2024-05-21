@@ -64,6 +64,12 @@ git commit -m "Learning JS commit"
 git remote add origin https://github.com/ItsMeDeVeN/Learning_JS.git
 To remove the origin :- git remote rm origin
 git push origin master
+
+while commiting the changes:-
+git commit -a
+// Write the description of the changes made
+then press esc key to come out of the INSERT mode
+then type :wq to save changes and then quit the edit. 
 */
 
 
