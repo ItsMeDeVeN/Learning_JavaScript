@@ -24,7 +24,7 @@ Npm is used to install, uninstall, and update packages, while npx is used to exe
 /*Q) What are git push,pull,commit?]
 ANS:- We would be using "gitbash" which provides Git Command Line experience in the Operating System. 
 Git is version control system used for tracing changes in the source code during software development. 
-Stages of a file while editing a git file == STAGED> COMMITTED => MODIFIED
+Stages of a file while editing a git file == MODIFIED  => STAGED => COMMITTED 
 
 TO COPY = Ctrl + ins ; Paste = Shift + ins;
 COMMANDS:-
@@ -38,6 +38,20 @@ For connecting to the GITHUB Repo:-
 git remote add origin https://github.com/ItsMeDeVeN/demo.git
 git remote -v
 git push origin master
+
+…or create a new repository on the command line
+echo "# Learning_JS" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ItsMeDeVeN/Learning_JS.git
+git push -u origin main
+
+or push an existing repository from the command line
+git remote add origin https://github.com/ItsMeDeVeN/Learning_JS.git
+git branch -M main
+git push -u origin main
 */
 
 
