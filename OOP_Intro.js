@@ -1,5 +1,7 @@
 /*Object-Oriented Programming
-USing an example we can understand the basic concept as if we follow a particlar Blueprint for construting many buildings 
+Object is an instance of a class.
+
+Using an example we can understand the basic concept as if we follow a particlar Blueprint for construting many buildings 
 then all the buildings would be identical in terms of their basic structure as they are following the same blueprint.
 So here we can state that Class = Blueprint, Object = Buildings
 Class = Car          =>       Objects = Swift, Fortuner, Zen, City
