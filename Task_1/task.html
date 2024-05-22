@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <style>
+        .form-container {
+            border: 2px solid #030658; /* Border style */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Padding inside the container */
+            width: 400px; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the container horizontally */
+            background-color: #eddbdb; /* Background color */
+        }
+        .form-result {
+            border: 2px solid #dd3b3b; /* Border style */
+            padding: 20px; /* Padding inside the container */
+            width: 400px; /* Adjust the width as needed */
+            margin: auto; /*Center the container horizontally*/
+            text-align: center;
+        }
+        .styled-input {
+            width: 300px;  /* Adjust the width as needed */
+            height: 25px;  /* Adjust the height as needed */
+            margin: 5px ; /* Adjust the margin as needed */
+            padding: 10px;   /* Optional: Add padding for better text spacing */
+            font-size: 20px; /* Optional: Increase font size for better readability */
+        }
+        .styled-gender {
+            width: 50px;  /* Adjust the width as needed */
+            height: 20px;  /* Adjust the height as needed */
+            margin: 10px ; /*Adjust the margin as needed*/
+            padding: 5px;   /*Optional: Add padding for better text spacing*/
+            font-size: 200px; /*Optional: Increase font size for better readability*/
+        }
+
+        h3 {
+            font-size: 35px;
+        }
+        p {
+      font-size: 20px;
+        }
+        label{
+            font-size: 20px
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <h2 align = "center"><b><u>User Details</u></b></h2>
+    <form align = "center" onsubmit="returndetails(event)">
+        <!-- Username -->
+        <label for="name">Name: </label><br>
+        <input type="text" placeholder ="Name" id="name" name="name" class="styled-input" ><br><br>
+       
+        <!-- Gender -->
+        <label><b>Gender:</b></label><br>
+        <input type="radio" checked="checked" id="male" name="gender" value="Male" class="styled-gender">
+        <label for="male">Male</label><t>
+        <input type="radio" id="female" name="gender" value="Female" class="styled-gender">
+        <label for="female">Female</label><t>
+        <input type="radio" id="other" name="gender" value="Other" class="styled-gender"> <!-- The one having the same name works as single choie questions -->
+        <label for="other">Other</label><br><br>
+        
+        <!-- Phone number -->
+        <label for="phone"><b>Phone Number:</b></label><br>
+        <input type="tel" placeholder = "Contact No."  id="phone" name="phone" class="styled-input"><br><br>
+        
+        <!-- Email address -->
+        <label for="email"><b>Email Address:</b></label><br>
+        <input type="email" placeholder ="Email Address" id="email" name="email" class="styled-input"><br><br>
+        
+        <!-- Physical address -->
+        <label for="address"><b>Physical Address:</b></label><br>
+        <input type="text" placeholder ="Residential Address" id="address" name="address" class="styled-input"><br><br>
+   
+        <!-- Submit button -->
+        <!-- <button type="submit" onclick ="storeData()">Submit</button>  -->
+        <button type="submit">Submit</button>
+        </form>
+        <!-- <button type = "button" onclick="retrieveData()">Click to Retrive</button> --> <!--To be used only while storing in the local storage-->
+    </div>
+    <div id = "output" class="form-result"></div>
+    <script src = app.js></script>
+</body>
+</html>
