@@ -5,28 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Management System</title>
     <style>
+        /* Center align the form container */
         .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Adjust as needed */
         }
+        /* Styling for links */
+        .link {
+            text-decoration: none;
+            color: #07045c;
+            font-size: 20px;
+            border: 2px solid #07045c;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            margin: 300px;
+        }
+
+        /* Hover effect for links */
+        .link:hover {
+            background-color: #07045c;
+            color: #fff;
+        }
+        
         .form-container {
             border: 2px solid #07045c;
             border-radius: 10px;
             padding: 20px;
             width: 45%; /* Adjust the width as needed */
             background-color: #eddbdb;
-        }
-        .form-result {
-            border: 2px solid #000000;
-            border-radius: 10px;
-            padding:2px;
-            font-size: large;
-            background-color: #ffffff;
-            width: 50%; /* Adjust the width as needed */
-            text-align: justify;
-        }
+            margin-top: 100px;
+        } 
         .styled-input {
             width: 95%; /* Adjust the width as needed */
             height: 25px;
@@ -48,19 +59,23 @@
         label {
             font-size: 20px;
         }
+        /* form {
+            margin-top: auto;
+        } */
     </style>
 </head>
 <body>
-    
-    <div class="container">
+    <a href = "Form.html" class="link">User_Form</a>
+    <a href = "user.html" class="link">Details</a>
+    <div class="container" class="form-container" id="userFormContainer">
         <div class="form-container">
             <h2 ><b><u>User Details</u></b></h2>
-            <form id="userform">
+            <form id="userForm">
                 
                 <!-- Username -->
                 <label for="name"><u><b>Name: </b></u></label><br>
                 <input type="text" placeholder="Name" id="name" name="name" class="styled-input" pattern="[A-Za-z\s]+" title="Please enter a name using characters only." required><br><br>
-                
+
                 <!-- Gender -->
                 <label><b><u>Gender:</u></b></label><br>
                 <input type="radio" checked="checked" id="male" name="gender" value="Male" class="styled-gender">
@@ -72,11 +87,12 @@
                 
                 <!-- Phone number -->
                 <label for="phone"><b><u>Phone Number:</u></b></label><br>
-                <input type="tel" placeholder="Contact No." id="phone" name="phone" class="styled-input" pattern = "[0-9]+" title="Please enter only digits." required><br><br>
+                <input type="tel" placeholder="Contact No." id="phone" name="phone" class="styled-input" pattern="[0-9]+" title="Please enter only digits." required><br><br>
                 
                 <!-- Birth Date -->
                 <label for="birthday"><b><u>Birthday:</u></b></label><br>
                 <input type="date" id="birthday" name="birthday" class="styled-input"><br><br>
+                
                 <!-- Email address -->
                 <label for="email"><b><u>Email Address:</u></b></label><br>
                 <input type="email" placeholder="Email Address" id="email" name="email" class="styled-input" required><br><br>
@@ -86,13 +102,18 @@
                 <input type="text" placeholder="Residential Address" id="address" name="address" class="styled-input" required><br><br>
                 
                 <!-- Submit button -->
-                <button type="submit" style="margin-left: 30%" onclick="Userdeatils()"><b>User Details</b></button><br>
-                <button type="button" style="margin-left: 10%" onclick="showdata()"><b>List The Data</b></button><br>
-                
+                <button type="button" style="margin-left: 30%" onclick="submitUserDetails()" href="user.html"><b>Submit</b></button><br>
             </form>
         </div>
         <div id="userDetails" class="form-result"></div>
     </div>
-    <script src="app.js"></script>
+    <button type="button" onclick="displayUserDetails(data)" href ="user.html" >Back TO Details </button>
+    <script src ="Form.js"></script>
+    
+    <style>
+            button{
+                margin: 10px 10px 10px 10px;
+            }
+    </style>
 </body>
 </html>

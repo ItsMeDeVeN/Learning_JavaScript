@@ -1,10 +1,12 @@
-document.getElementById('userform').addEventListener('submit', function(event) {
-       event.preventDefault()
+function userUserdeatils(){
+      //event.preventDefault()
+
         // Get form values
         let name = document.getElementById("name").value;
         let gender = document.querySelector('input[name="gender"]:checked').value;
         let phone = document.getElementById("phone").value;
         let email = document.getElementById("email").value;
+        let birthday = document.getElementById("birthday").value;
         let address = document.getElementById("address").value;
         
         // Get existing data from local storage
@@ -14,9 +16,11 @@ document.getElementById('userform').addEventListener('submit', function(event) {
         let newData = {
           "Name": name,
           "Gender": gender,
+          "Birthdate": birthday,
           "Phone Number": phone,
           "Email": email,
-          "Address": address
+          "Address": address,
+          
         };
         existingData.push(newData);
         
@@ -25,7 +29,7 @@ document.getElementById('userform').addEventListener('submit', function(event) {
         
         // Display data on the page
         // displayUserDetails(existingData);
-      });
+      };
       
       function displayUserDetails(data) {
         let userDetailsDiv = document.getElementById('userDetails');
@@ -40,6 +44,7 @@ document.getElementById('userform').addEventListener('submit', function(event) {
             <p><strong>Name:</strong> ${item.Name}</p>
             <p><strong>Gender:</strong> ${item.Gender}</p>
             <p><strong>Phone Number:</strong> ${item["Phone Number"]}</p>
+            <p><strong>Birthdate:</strong> ${item.Birthdate}</p>
             <p><strong>Email:</strong> ${item.Email}</p>
             <p><strong>Address:</strong> ${item.Address}</p>
             <button type="button" style="margin-left: 30%" onclick="deletedata(${index})"><b>Delete</b></button>

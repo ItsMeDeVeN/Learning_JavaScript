@@ -1,0 +1,60 @@
+// // Storing the values then updating it
+
+// // function returndetails(event){
+// //     event.preventDefault();
+
+// //     let name = document.getElementById("name").value;
+// //     localStorage.setItem("name", name);
+
+// //     let gender = document.querySelector('input[name="gender"]:checked').value;
+// //     localStorage.setItem("gender", gender);
+
+// //     let phone = document.getElementById("phone").value;
+// //     localStorage.setItem("phone", phone);
+
+// //     let email = document.getElementById("email").value;
+// //     localStorage.setItem("email", email);
+
+// //     let address = document.getElementById("address").value;
+// //     localStorage.setItem("address", address);
+// // }
+
+// // function retrieveData() {
+// //     let name = localStorage.getItem("name");
+// //     let gender = localStorage.getItem("gender");
+// //     let phone = localStorage.getItem("phone");
+// //     let email = localStorage.getItem("email");
+// //     let address = localStorage.getItem("address");
+
+// //     let output = `
+// //                 <h3><u>Stored User Details</u></h3>
+// //                 <p><b>Name:</b>${name}</p>
+// //                 <p><strong>Gender:</strong> ${gender}</p>
+// //                 <p><strong>Phone Number:</strong> ${phone}</p>
+// //                 <p><strong>Email Address:</strong> ${email}</p>
+// //                 <p><strong>Physical Address:</strong> ${address}</p>
+// //                 `;
+// //         document.getElementById("output").innerHTML = output;
+// // }
+// function returndetails(event){
+//     event.preventDefault();
+//     let name = document.getElementById("name").value;
+//     let gender = document.querySelector('input[name="gender"]:checked').value;
+//     let phone = document.getElementById("phone").value;
+//     let email = document.getElementById("email").value;
+//     let address = document.getElementById("address").value;
+
+//     let output = `
+//                 <h3><u>Stored User Details</u></h3>
+//                 <p><b>Name: </b>${name}</p>
+//                 <p><strong>Gender: </strong> ${gender}</p>
+//                 <p><strong>Phone Number: </strong> ${phone}</p>
+//                 <p><strong>Email Address: </strong> ${email}</p>
+//                 <p><strong>Physical Address: </strong> ${address}</p>
+//                 `;
+//         document.getElementById("output").innerHTML = output;
+// }
+
+// // Example usage (e.g., attaching the functions to buttons):
+// // document.getElementById('saveButton').onclick = storeData;
+// // document.getElementById('retrieveButton').onclick = retrieveData;

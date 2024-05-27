@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+   <style>
+        .link {
+            text-decoration: none;
+            color: #07045c;
+            font-size: 20px;
+            border: 2px solid #07045c;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            margin: 300px;
+        }
+
+        /* Hover effect for links */
+        .link:hover {
+            background-color: #07045c;
+            color: #fff;
+        }
+
+        tbody   {
+          align-items: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+th, td {
+  background-color: #96D4D4;
+  border-style: dotted;
+}
+    </style>
+</head>
+<body>
+   <a href = "Form.html" class="link" >User_Form</a>
+    <a href = "user.html" class="link" >Details</a>
+    <h2><b><u>User Details</u></b></h2>
+    <table id="table" align="center">
+        <thead>
+            <tr>
+                <th style="width:20%"><b><u>Serial No.</u></b></th>
+                <th style="width:20%"><b><u>Name</u></b></th>
+                <th style="width:60%"><b><u>Actions</u></b></th>
+            </tr>
+        </thead>
+        <tbody id="userDetailsBody">
+            <!-- User details will be populated dynamically here -->
+        </tbody>
+    </table>
+    <script src="User.js"></script>
+    </body>
+</html>
