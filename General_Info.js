@@ -34,6 +34,8 @@ touch demo.txt  => To create a new file.
 git add demo.txt
 git commit -m "First Commmit"
 DIFFERENCE:- The repository that we created using the gitbash is solely for the local machine whereas the one using github is mainttained on the github's platform.
+
+
 For connecting to the GITHUB Repo:-
 git remote add origin https://github.com/ItsMeDeVeN/demo.git
 git remote -v
