@@ -21,7 +21,9 @@ Npm is used to install, uninstall, and update packages, while npx is used to exe
 */
 
 
-/*Q) What are git push,pull,commit?]
+/*
+GITHUB
+Q) What are git push,pull,commit?]
 ANS:- We would be using "gitbash" which provides Git Command Line experience in the Operating System. 
 Git is version control system used for tracing changes in the source code during software development. 
 Stages of a file while editing a git file == MODIFIED  => STAGED => COMMITTED 
@@ -122,4 +124,14 @@ Ans :- Represnted as "..." i.e 3 dots, that allows you to spread the elements of
 (such as arrays, strings, or objects), into another iterable or function call. 
 It “expands” an iterable object array into the list of arguments.
 
+
+
+Q) WHAT IS AN API??
+Ans:- IT stands for Application Programming Interface
+    An API is the messenger that takes requests and sends it to system and ask further if the following data can be accessed or not. 
+    Then the API responds with either the data or an error that the data cannot be fetched.
+    For Ex:- When we go to a restaurant for food, the interface between US and the CHEF is termed as API i.e. "The Waiter".
+    It takes the request from us to the chef(ORDER) and return their response to us(FOOD).
+
+    AS AN real world example, if we booking flight tickets from a third-party application then the data is accessed from the particular airline's API. 
 */
