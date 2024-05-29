@@ -9,6 +9,15 @@ Module Dependencies: In languages like Python, JavaScript modules are self-conta
 
 Package Dependencies: Packages are collections of modules or libraries bundled together for easy distribution and installation. 
  Package managers like npm (Node.js), pip (Python) help manage and install these dependencies automatically.
+
+ Q) WHAT IS npm?
+ ANS :- npm stands for "Node Package Manager" for JavaScript, used with the Node.js runtime environment. 
+ npm allows developers to discover, share, and reuse code packages and modules for building JavaScript applications.
+Functionalities :- Package Installation_Publishing_Scripts , Dependency Management_Security, Versioning, Scripts.
+
+Q) WHAT is the diff b/w npm and npx?
+ANS :- Npm (Node Package Manager) and npx (Node Package Execute) are used to manage JavaScript environment packages for web applications.
+Npm is used to install, uninstall, and update packages, while npx is used to execute packages directly without installing them  globally or locally beforehand.
 */
 
 
@@ -125,4 +134,12 @@ Ans:- IT stands for Application Programming Interface
     It takes the request from us to the chef(ORDER) and return their response to us(FOOD).
 
     AS AN real world example, if we booking flight tickets from a third-party application then the data is accessed from the particular airline's API. 
+*/
+
+/*
+Q) Difference between framework and library
+Q) Difference between bit and bytes?
+Ans:-  Byte = 8 bits ; Bits are the smallest part of data available which stores a single binary number 
+hence can represent only 2 values(0 or 1) whereas a byte can represnt (2^8 i.e. 256) values can be represented using it.
+ 
 */
