@@ -5,10 +5,11 @@ Ans:- React is a JS library used for building dynamic and interactive interfaces
 Advantages of React:-
 Component-Based architecture, Virtual-DOM, Unidirectional Dataflow(Data flows from parent to child components via props), rich ecosystem & community. 
 
-
+difference between angular 
 COMPONENT-BASED ARCHITECTURE
 React follows a component-based architecture where UIs are broken down into reusable pieces called components. 
 Each component manages its state and can be composed together to build complex UIs. This approach promotes code reusability, maintainability, and scalability.
+Name of a component should always be start with a Capital letter so as to distinguish it from the html tags. 
 
 VIRTUAL-DOM
 React utilizes a virtual DOM (Document Object Model) to improve performance. Instead of directly interacting with the browser's DOM, 
